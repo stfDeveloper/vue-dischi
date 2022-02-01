@@ -1,7 +1,8 @@
 <template>
-  <div class="hello">
-    header
-
+  <div class="header">
+    <div class="logo">
+      <img src="../assets/style/Spotify-png.png" alt="">
+    </div>
   </div>
 </template>
 
@@ -9,12 +10,18 @@
 export default {
   name: 'Header',
   props: {
-    msg: String
+    
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-
+.header{
+  width:100%;
+  background-color: rgb(49, 49, 66);
+  img{
+    width: 100px;
+  }
+}
 </style>
