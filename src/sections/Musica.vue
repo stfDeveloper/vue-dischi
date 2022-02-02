@@ -1,5 +1,5 @@
 <template>
-  <div class="canzone">
+  <div class="card">
       <img 
       :src="canzone.poster" 
       alt=""
@@ -23,22 +23,23 @@ export default {
 </script>
 
 <style lang="scss">
-.canzone{
-    padding: 10px 5 px;
-    width: 150px;
-    height: 150px;
+.card{
+    padding: 10px 10px;
+    width: 180px;
+    height: 220px;
     text-align: center;
+    background-color: rgb(49, 49, 66);
+    margin: 20px;
+
     img{
-        width: 50%;
-        height: 50%;
+        width: 80%;
+        height: 70%;
     }
     h5{
         color: black;
     }
     p{
-        color: rgba(0, 0, 0, 0.829);
+        opacity: 0.4;
     }
 }
-
-
 </style>

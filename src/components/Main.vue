@@ -8,13 +8,11 @@
 import Album from "../sections/Album.vue"
 
 export default {
-
   name: 'Main',
     components:{
       Album, 
     }
 }
-
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

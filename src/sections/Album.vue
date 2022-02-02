@@ -1,7 +1,8 @@
 <template>
   <div class="container">
       <div class="canzone">
-      <Musica
+      <Musica v-for="(Musica, index) in musicaArray"
+      :key="index"
       :canzone="Musica" 
       />
       </div>
@@ -21,7 +22,7 @@ export default {
         }
     },
     components: {
-        Musica,
+        Musica
     },
     created(){
         this.caricamentoMusica()
@@ -40,15 +41,18 @@ export default {
             });
         },
     },
-
 }
 </script>
 
 <style lang="scss">
 .container{
+   display: flex;
+}
+.canzone{
+    margin-top: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
 }
 </style>
