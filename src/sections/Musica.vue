@@ -36,10 +36,17 @@ export default {
         height: 70%;
     }
     h5{
+        margin-top: 5px;
         color: black;
     }
     p{
         opacity: 0.4;
+    }
+}
+.card:hover{
+    img{
+        transition: ease-in-out 0.5s;
+        transform: scale(1.1);
     }
 }
 </style>
